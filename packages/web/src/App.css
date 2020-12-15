@@ -1,0 +1,487 @@
+.App {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+div.ui.menu.pointing.App-menu {
+  font-size: 28px;
+  background-color: #16314f;
+  color: white;
+  height: 5rem;
+  /* padding: 15px 0px !important; */
+}
+
+.App-scores {
+  margin: 5rem 0px 0px 0px !important;
+  padding: 0px !important;
+}
+
+.ui.inverted.pointing.menu .active.item:hover::after,
+.ui.inverted.pointing.menu .active.item::after {
+  background-color: #39506a !important;
+}
+
+div.ui.inverted.menu.header.item {
+  padding: 10px 0px !important;
+}
+
+.App-body {
+  background-color: #edeef0;
+  min-height: 100vh;
+}
+
+.ui.segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  font-size: 15px !important;
+  /* font-size: calc(10px + 2vmin) !important; */
+  color: white;
+}
+
+.App-boxscore {
+  width: 100% !important;
+  background-color: #edeef0;
+}
+
+.main-boxscore {
+  padding: 20px !important;
+}
+
+.boxscore-section {
+  margin: auto !important;
+  max-width: 65% !important;
+  padding: 20px 0px !important;
+}
+
+.inner-section1 {
+  padding: 10px !important;
+  text-align: left !important;
+  font-size: 12px !important;
+}
+
+.inner-section2 {
+  padding: 5px !important;
+}
+
+.nba-summary {
+  background-color: white !important;
+  margin: 0px !important;
+  padding: 50px 100px !important;
+  width: 100% !important;
+  font-size: 15px !important;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 10px 5px -5px #777;
+  -moz-box-shadow: 5px 10px 5px -5px #777;
+  box-shadow: 5px 10px 5px -5px #777;
+  overflow-x: scroll;
+}
+
+div.centered.row.leaders-row,
+div.column.game-leaders,
+table.ui.celled.basic.middle.aligned.table.summary-table {
+  border: 1px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 100% !important;
+  font-size: 15px !important;
+  box-shadow: 0px 0px 0px 1px rgb(200, 200, 200) !important;
+}
+
+.som-other {
+  -webkit-box-shadow: -2px 5px 5px 2px #777;
+  -moz-box-shadow: -2px 5px 5px 2px #777;
+  box-shadow: 1px 5px 10px 2px #777;
+}
+
+.nba-team {
+  padding: 15px 0px !important;
+}
+
+.stats-column {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+}
+
+.stats-section {
+  background-color: white;
+}
+
+.team-name,
+.team-points {
+  font-size: 12px !important;
+  padding: 0px 0px !important;
+  min-width: 100 !important;
+}
+
+.team-status {
+  font-size: 12px !important;
+  padding: 0px 0px !important;
+  min-width: 100 !important;
+  margin: 0px !important;
+}
+
+.nba-status {
+  width: 100% !important;
+  background-color: white;
+  padding: 0px;
+  min-height: 9rem !important;
+  font-size: 18px !important;
+}
+
+.game-status {
+  font-size: 5px !important;
+  padding: 0px !important;
+  text-align: center !important;
+  margin: 0px !important;
+  font-size: 10px !important;
+}
+
+table.ui.basic.compact.striped.table.nba-table > thead > tr > th {
+  /* background-color: #c1c1c1 !important; */
+  border-top: 2px solid !important;
+  border-bottom: 2px solid !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 2px !important;
+}
+
+table.ui.basic.compact.table.nba-table > thead > tr > th.name-stat {
+  border-top: 2px solid !important;
+  border-bottom: 2px solid !important;
+}
+
+div.centered.row.leaders-row {
+  width: 100% !important;
+  margin: auto !important;
+}
+
+.status-summary {
+  align-items: center !important;
+  align-content: center !important;
+  justify-content: center !important;
+}
+
+.status-icon {
+  margin: 0px 15px !important;
+}
+
+.winner-icon {
+  margin: 0px 5px !important;
+}
+
+div.ui.card,
+div.content,
+div.ui.horizontal.segments,
+div.ui.segments,
+div.ui.basic.segment,
+div.ui.basic.segment.stat-text,
+div.ui.card > :last-child,
+.ui.label,
+div.ui.segment {
+  border: none !important;
+  border-radius: 0px !important;
+  border-width: 0px !important;
+  border-color: white !important;
+}
+
+.nba-stats {
+  text-align: left !important;
+}
+
+div.content.top-player {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+  border: none !important;
+  box-sizing: none !important;
+}
+
+div.ui.horizontal.segments.top-player {
+  margin: 0px !important;
+  /* padding: 15px !important; */
+  width: 100% !important;
+  border: none !important;
+}
+
+div.ui.segment.icon-segment {
+  color: black !important;
+  margin: 0px !important;
+  width: 20% !important;
+  padding: 0px 0px 0px 0px !important;
+}
+
+div.ui.segment.pitcher-icon-segment {
+  color: black !important;
+  margin: 0px !important;
+  width: 30% !important;
+  padding: 0px 0px 0px 0px !important;
+}
+
+div.content.leader-header {
+  padding: 28px 50px 9px 15px !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+
+div.content.stat-buttons {
+  padding: 12px 0px !important;
+  height: 5rem !important;
+}
+
+.leader-card {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+  border: none !important;
+  box-sizing: none !important;
+}
+
+.leader-segments {
+  margin: 0px !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+.leader-icon {
+  color: black !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 20% !important;
+}
+
+.stat-segment {
+  color: black !important;
+  padding: 5px 50px 5px 5px !important;
+  /* height: 50% !important; */
+}
+
+div.ui.segments.pitcher-segment {
+  margin: 0px !important;
+  width: 80% !important;
+  border: none !important;
+}
+
+div.ui.basic.segment.pitcher-segment {
+  align-items: flex-start !important;
+  width: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+div.ui.segments.player-segment {
+  margin: 0px !important;
+  padding: 5px 50px 10px 5px !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+div.ui.basic.segment.player-segment,
+div.ui.basic.segment.pitcher-segment {
+  padding: 5px 0px 5px 5px !important;
+  align-items: flex-start !important;
+}
+
+div.ui.segments.player-segment,
+div.ui.segments.pitcher-segment {
+  padding: 15px 48px 15px 25px !important;
+}
+
+div.ui.segment.player-segment,
+div.ui.segment.pitcher-segment > div.left.aligned.header {
+  font-weight: bold !important;
+  font-size: 15px !important;
+  color: black !important;
+}
+
+div.stat-text > div.header {
+  font-weight: bold !important;
+  font-size: 15px !important;
+  color: black !important;
+}
+
+div.stat-header {
+  font-weight: bold !important;
+  font-size: 15px !important;
+  color: black !important;
+  padding-bottom: 2px !important;
+}
+
+div.meta {
+  font-size: 15px !important;
+}
+
+span {
+  padding-left: 10px !important;
+  font-weight: 100 !important;
+  font-size: 15px !important;
+}
+
+span.pitcher-span {
+  padding-left: 0px !important;
+  font-weight: 100 !important;
+  font-size: 15px !important;
+}
+
+div.ui.segment.name-segment {
+  color: black !important;
+  padding: 0px 10px !important;
+  /* height: 50% !important; */
+}
+
+div.stat-text {
+  align-items: center !important;
+  text-align: center !important;
+  padding: 0px !important;
+}
+
+div.ui.right.labeled.button.button-left,
+div.ui.left.labeled.button.button-right {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  height: 100% !important;
+  width: 20% !important;
+}
+
+button.ui.circular.toggle.button.left-active {
+  width: 100% !important;
+  font-size: 15px !important;
+  height: 100% !important;
+  border-top: 2px solid rgb(160, 160, 160) !important;
+  border-left: 2px solid rgb(160, 160, 160) !important;
+  border-bottom: 2px solid rgb(160, 160, 160) !important;
+  background-color: white !important;
+  color: red !important;
+  border-color: 2px solid rgb(160, 160, 160) !important;
+}
+
+button.ui.circular.toggle.button.left-stat {
+  width: 100% !important;
+  font-size: 15px !important;
+  height: 100% !important;
+  border-top: 2px solid rgb(160, 160, 160) !important;
+  border-left: 2px solid rgb(160, 160, 160) !important;
+  border-bottom: 2px solid rgb(160, 160, 160) !important;
+  color: black !important;
+  border-color: rgb(160, 160, 160) !important;
+}
+
+button.ui.toggle.button.middle-active {
+  margin: 0px !important;
+  width: 20% !important;
+  font-size: 15px !important;
+  height: 100% !important;
+  border: 2px solid rgb(128, 128, 128) !important;
+  background-color: white !important;
+  color: red !important;
+  border-color: rgb(160, 160, 160) !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+button.ui.toggle.button.middle-stat {
+  margin: 0px !important;
+  width: 20% !important;
+  font-size: 15px !important;
+  height: 100% !important;
+  border: 2px solid rgb(128, 128, 128) !important;
+  color: black !important;
+  border-color: rgb(160, 160, 160) !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+button.ui.circular.toggle.button.right-active {
+  width: 100% !important;
+  font-size: 15px !important;
+  height: 100% !important;
+  border-top: 2px solid rgb(160, 160, 160) !important;
+  border-right: 2px solid rgb(160, 160, 160) !important;
+  border-bottom: 2px solid rgb(160, 160, 160) !important;
+  background-color: white !important;
+  color: red !important;
+  border-color: 2px solid rgb(160, 160, 160) !important;
+}
+
+button.ui.circular.toggle.button.right-stat {
+  width: 100% !important;
+  font-size: 15px !important;
+  height: 100% !important;
+  border-top: 2px solid rgb(160, 160, 160) !important;
+  border-right: 2px solid rgb(160, 160, 160) !important;
+  border-bottom: 2px solid rgb(160, 160, 160) !important;
+  color: black !important;
+  border-color: rgb(160, 160, 160) !important;
+}
+
+button.ui.basic.circular.toggle.button.button-stat {
+  color: black !important;
+  border-left: 1px thin rgb(148, 148, 148);
+  border-top: 1px thin rgb(148, 148, 148);
+  border-bottom: 1px thin rgb(148, 148, 148);
+}
+button.ui.toggle.button-main {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  height: 100% !important;
+  width: 20% !important;
+  font-size: 15px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+div.ui.segment.stat-1 {
+  align-items: flex-start !important;
+  padding: 0px !important;
+  border: none !important;
+}
+div.ui.segment.stat-2 {
+  align-items: center !important;
+  padding: 0px !important;
+  border: none !important;
+}
+div.ui.segment.stat-3 {
+  align-items: flex-end !important;
+  padding: 0px !important;
+  border: none !important;
+}
+div.ui.horizontal.segments.overview {
+  background-color: white; /* height: 50vh !important; */
+  /* padding: 100px 0px !important; */
+}
+div.App-boxscore > div.ui.segment {
+  background-color: #edeef0;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+th.status-summary,
+td.status-summary {
+  font-size: 10px !important;
+  padding: 3px 5px !important;
+  height: 10px !important;
+}
+/* ui.table thead tr.team-header {
+  border-top: 5px solid !important;
+  border-bottom: 5px solid !important;
+}
+ */

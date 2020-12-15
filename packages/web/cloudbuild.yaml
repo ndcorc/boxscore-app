@@ -1,0 +1,7 @@
+steps:
+        - name: 'gcr.io/cloud-builders/docker'
+          args: [ 'build', '-t', 'gcr.io/nolan-sandbox-277919/boxscore-web', '.' ]
+        - name: 'gcr.io/cloud-builders/docker'
+          args: ['push', 'gcr.io/nolan-sandbox-277919/boxscore-web']
+        - name: 'gcr.io/cloud-builders/gcloud'
+          args: ['app', 'deploy']
